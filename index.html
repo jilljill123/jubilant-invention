@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.w3schools.com/css/demo_default.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: green;
+    color: #f5f4f8cb;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    border: 50px double white;
+    background-image: url(j.jpg);
+
+}
+
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 20px;
+    margin: 0 210px;
+}
+
+#main1 {
+  border: 2px solid;
+  background-color:white;
+}
+
+#sidebar {
+    background-color:yellowgreen;
+    background-image: url("download.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: black;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border: 2px solid black;
+}
+
+#bottom {
+    border: 3px groove maroon;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: wheat;
+}
+
+.menuitem:first-child {
+   background-color: green;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+</style>
+
+<style>/* Stylesheet 2: */
+body {
+    font-family: Arial;
+    background-color:maroon;
+    line-height: 20px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 26px;    
+}
+
+#top h1 {
+    margin:0;
+    line-height: 50px;
+}
+
+#menubar {
+    width: 190px;
+    float: right;
+}
+
+#main {
+    padding: 10px;
+    background-color: orange;
+    font: 80% Verdana;
+}
+
+#main h1, #main h2 {
+    color: #d14836;
+}
+
+#sidebar {
+    background-color: #F6DAD7;
+    color: #d14836;
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    color: #ffffff;
+}
+
+#menulist {
+    padding:0;
+    font: 16px verdana;
+}
+
+.menuitem {
+    width: 155px;
+    background-color: #d14836;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(2) {
+   background-color:white;
+   color: #d14836;
+   font-weight:bold;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+    color: #d14836;
+}
+
+a {
+    color: #d14836;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<style>/* Stylesheet 3: */
+body {
+    font: 100% Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#sidebar {
+    background-color:#f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding-left: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+h1, h2, h3 {
+    color: maroon;
+}
+
+#menulist {
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+
+.menuitem {
+    width: 165px;
+    float: left;
+    background-color: #555555;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(3) {
+   background-color:maroon ;
+}
+
+.menuitem:hover {
+    background-color: #000;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #84c754;
+}
+</style>
+<style>/* Stylesheet 4: */
+body {
+    font: 100% Courier New;
+    margin: 20px;
+    line-height: 26px;
+    background-color: #000000;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #84c754;
+    padding: 15px;
+}
+
+#main {
+    padding: 10px;
+    color: #84c754;
+}
+
+#sidebar {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 80%;
+    line-height: 20px;
+}
+
+#bottom {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1,#top p {
+    margin: 0;
+}
+
+.menuitem {
+    color: #84c754;
+    cursor: pointer;
+}
+
+.menuitem:nth-child(4) {
+    color:white;
+    font-weight:bold;
+}
+
+.menuitem:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #84c754;
+}
+@media (max-width: 600px) {
+    #sidebar {
+       width: auto;
+       margin-bottom:10px;        
+       position: relative;
+    }    
+}
+
+</style>
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="">
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Welcome to Mallorca National High School</h1>
+    <p>Use the menu to select different pages</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Page0
+       </li><li class="menuitem" onclick="reStyle(1)">Page1 
+       </li><li class="menuitem" onclick="reStyle(2)">Page2
+       </li><li class="menuitem" onclick="reStyle(3)">Page3
+       </li><li class="menuitem" onclick="noStyles()">Page4
+     </li></ul>
+    </div>
+    <div id="main1">
+    <div id="main">
+      <h1>Mallorca National High School</h1>
+      <p>The Mallorca National High School (MNHS) Mallorca National High School was locaated Barangay Mallorca 3102 San Leonardo Central Luzon  1 km.  The management of the school was unstable due to the inevitable problems resulted by small number of enrollees. This certain problem was addressed by the Barrio officials. Their children who were studying in San Leonardo Academy and some school in Cabantuan City and other nearby places were enrolled by these officials. This action was to patronize the newly-opened barrio high school and convince the other people in the community to support the school.<br>
+        In 1970, the first graduation held. this graduating class was composed of 27 graduates. Ten of them were female and 17 were male.  Before Mr. Pestano resigned for migration to Canada in 1977, the name of the school was changed from Mallorca Barrio High School. In 1977, Mrs. Anselma N. Padilla became the fourth OIC of the school. It was during the administration of Mrs. Padilla that Mallorca Barangay High School became Mallorca High School. While serving as teh chairman of May 1988 national elections, Mrs. Padilla succumbed from a major heart attack and died after serving the school for 21 years.
+        :<br>
+      <a href="https://www.w3schools.com/css/demo_default.htm#" onclick="reStyle(0);return false">Page1</a>,
+      <a href="https://www.w3schools.com/css/demo_default.htm#" onclick="reStyle(1);return false">Page2</a>,
+      <a href="https://www.w3schools.com/css/demo_default.htm#" onclick="reStyle(2);return false">Page3</a>,
+      <a href="https://www.w3schools.com/css/demo_default.htm#" onclick="reStyle(3);return false">Page4</a>.
+      </p>
+       <h2>History</h2>
+      <p>  Mallorca National High School was formerly known as Mallorca Barrio High School (MBHS). it was founded through the efforts of the civic-minded citizens of the community for the benefit of the youth.<br> Mr. Felimon S. Geronimo, who was then the principal of Mallorca Elementary School (ES), Barrio Captain Ponciano Atendido and this councilorsnamely, Hon. Ando Reyes, Hon. Macario Pestano, Hon. Teodoro Santiago, Hon. Santos Dela Cruz and Secretary of the Barangay Ms. Natividad Pagtalunan were the initiators of the establishment of the institution.<br>
+        On its first years, Mallorca Barrio High School was under the umbrella of Mallorca Elementart\y School. the classes which were held at the two classrooms sited at the MES compound were supervised by Mr. Geronimo who was assigned as the Officer-In-Charge (OIC) of the barrio school.<a href="https://www.w3schools.com/css/demo_default.htm#" onclick="noStyles();return false">Random Statements</a>.</p>
+   </div>
+   </div>
+    <div id="sidebar">
+      <h3>Contact Information:</h3>
+      <p>Mallorca National High School Tel No.: (044) 940 3972 Email: mallorcanationalhs@gmail.com
+
+        Barangay Mallorca, San Leonardo, Philippines, 3102\
+        <a href="https://sites.google.com/site/mallorcanationalhighschool/"title="Facebook"><b>Facebook</b></a><br>
+</p>
+    </div>
+  </div>  
+  
+  
+  <div id="bottom">
+    Mr. Felimon S. Geronimo, who was then the principal of Mallorca Elementary School (ES), Barrio Captain Ponciano Atendido and this councilorsnamely, Hon. Ando Reyes, Hon. Macario Pestano, Hon. Teodoro Santiago, Hon. Santos Dela Cruz and Secretary of the Barangay Ms. Natividad Pagtalunan were the initiators of the establishment of the institution.
+  </div>
+</div>
+
+<script>
+function noStyles() {
+    document.styleSheets[0].disabled = true;
+    document.styleSheets[1].disabled = true;
+    document.styleSheets[2].disabled = true;
+    document.styleSheets[3].disabled = true;
+}
+
+function reStyle(n) {
+    noStyles()
+    document.styleSheets[n].disabled = false;
+}
+
+function closeBlackdiv() {
+    var blackdiv, stylediv;
+    blackdiv = document.getElementById("blackdiv")
+    blackdiv.parentNode.removeChild(blackdiv);
+    stylediv = document.getElementById("stylediv")
+    stylediv.parentNode.removeChild(stylediv);
+}
+
+function showStyle(n) {
+var div, text, blackdiv;
+blackdiv = document.createElement("DIV");
+blackdiv.setAttribute("style","background-color:#000000;position:absolute;width:100%;height:100%;top:0;opacity:0.5;margin-left:-20px;");
+blackdiv.setAttribute("id","blackdiv");
+blackdiv.setAttribute("onclick","closeBlackdiv()");
+document.body.appendChild(blackdiv);
+div = document.createElement("DIV");
+div.setAttribute("id","stylediv");
+div.setAttribute("style","background-color:#ffffff;padding-left:5px;position:absolute;width:auto;height:auto;top:100px;bottom:50px;left:200px;right:200px;overflow:auto;font-family: monospace; white-space: pre;line-height:16px;");
+text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
+div.appendChild(text);
+document.body.appendChild(div);
+//alert(document.getElementsByTagName("STYLE")[n].innerHTML);
+}
+reStyle(0);
+</script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
